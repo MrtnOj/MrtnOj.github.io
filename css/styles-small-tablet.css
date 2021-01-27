@@ -1,0 +1,87 @@
+@media screen and (max-width: 690px) {
+
+    /* Navbar section starting here */
+
+    .nav-links__link a {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    /* Header section starting here */
+
+    .header {
+        height: 650px;
+        background-size: 400%;
+    }
+
+    .header__title {
+        margin-top: 150px;
+        font-size: 3.4rem;
+    }
+
+    .header__text {
+        font-size: 2rem;
+    }
+
+    /* Portfolio section starting here */
+
+    .portfolio-section__title {
+        font-size: 3rem;
+    }
+
+    .project {
+        width: 90vw;
+        height: 600px;
+    }
+
+    .project-card__header {
+        padding: 10px 5px 5px 5px;
+        height: 140px;
+    }
+
+    .project-card__title {
+        font-size: 1.6rem;
+    }
+
+    .project-card__intro {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .project-card__screenshot-section {
+        width: 100%;
+        padding: 1rem 0.3rem;
+        height: calc(600px - 220px)
+    }
+
+    .project-card__footer {
+        height: 80px;
+    }
+
+    .project-details {
+        display: none;
+    }
+
+    /* Contact section starting here */
+
+    .contact-section {
+        height: 750px;
+    }
+
+    .contact-section__title {
+        font-size: 3rem;
+    }
+
+    .contact-section__elements a{
+        margin:  5px 20px;
+        font-size: 0.8rem;
+        transform: none;
+    }
+
+    .email-form {
+        margin-top: 30px;
+        padding: 20px 10px;
+        width: 90vw;
+        max-width: 540px;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Martin Ojasalu | Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Web developer portfolio page">
+        <meta name="author" content="Martin Ojasalu">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"> <!-- Main stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/styles-tablet.css" /> <!-- Regular tablet stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 690px)" href="css/styles-small-tablet.css" /> <!-- Smaller tablet stylesheet -->
+        <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/styles-mobile.css" /> <!-- Mobile stylesheet -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Poppins&display=swap" rel="stylesheet"> 
+
+
+        <script src="https://kit.fontawesome.com/0ac152067a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="#header" class="nav__logo__link"><img class="nav__logo" src="media/Logo.png" alt="logo"></img></a>
+            <ul class="nav-links">
+                <li class="nav-links__link">
+                    <a href="#Portfolio">Portfolio</a>
+                </li>
+                <li class="nav-links__link">
+                    <a href="#Contact">Contact</a>
+                </li>
+                <li class="nav-links__link">
+                    <a href="cv.html" target="_blank">CV</a>
+                </li>
+            </ul>
+            <svg width="35px" height="35px" id="nav-hamburger" class="nav__hamburger">
+                <path d="M 0 5 L 33 5" class="hamburger"></path>
+                <path d="M 0 15 L 33 15" class="hamburger"></path>
+                <path d="M 0 25 L 33 25" class="hamburger"></path>
+            </svg>
+        </nav>
+        <nav id="mobile-nav" class="mobile-nav">
+            <ul class="mobile-nav__links">
+                <li class="mobile-nav__link">
+                    <a href ="#Portfolio">Portfolio</a>
+                </li>
+                <li class="mobile-nav__link">
+                    <a href ="#Contact">Contact</a>
+                </li>
+                <li class="mobile-nav__link">
+                    <a href="cv.html" target="_blank">CV</a>
+                </li>
+            </ul>
+        </nav>
+        <header id="header" class="header">
+            <h1 class="header__title">Martin Ojasalu</h1>
+            <p class="header__text">Full stack web developer</p>
+            <section class="header__links">
+                <a href="https://github.com/MrtnOj" class="header__link" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/martin-ojasalu" class="header__link" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            </section>
+        </header>
+        <main>
+            <section class="portfolio-section">
+                <h1 id="Portfolio" class="portfolio-section__title">Portfolio</h1>
+                <!-- Project card -->
+                <article class="project">
+                    <header class="project-card__header">
+                        <h1 class="project-card__title">DiscHub</h1>
+                        <p class="project-card__intro">
+                            Disc golf scoring application designed for easy use on mobile devices
+                        </p>
+                    </header>
+                    <section class="project-card__screenshot-section">
+                        <img class="project-card__screenshot" src="./media/DiscHubScoring.png" alt="DiscHub application scoring screenshot">
+                        <img src="./media/DiscHubScorecard.png" alt="DiscHub app scorecard screenshot" class="project-card__screenshot">
+                    </section>
+                    <footer class="project-card__footer">
+                        <div class="project-card__links">
+                            <a href="https://github.com/MrtnOj/DiscHub" target="_blank" class="project-card__link">Github</a>
+                            <a href="https://frozen-river-07638.herokuapp.com/" target="_blank" class="project-card__link">Demo</a>
+                        </div>
+                    </footer>
+                    <!-- Project details that appear over the project card with mouseover -->
+                    <section class="project-details">
+                        <h2 class="project-details__description__title">Description</h2>
+                        <p class="project-details__description__text">
+                            Primary function of this application is to offer a quick and simple way to mark scores while playing a round of disc golf. The app has 
+                            very basic authentication and for logged in users, the rounds are saved and displayed on nifty scorecards.
+                            There's also a feature for checking weather forecast for the location of courses because nobody wants to play in the rain.
+                        </p>
+                        <ul class="project-details__tech-list">
+                            <li class="project-details__tech-list__element">node.js</li>
+                            <li class="project-details__tech-list__element">express</li>
+                            <li class="project-details__tech-list__element">React.js</li>
+                            <li class="project-details__tech-list__element">MongoDb Atlas</li>
+                            <li class="project-details__tech-list__element">Mongoose ORM</li>
+                        </ul>
+                        <!-- <div class="project-details__links">
+                            <a href="https://github.com/MrtnOj/DiscHub" target="_blank" class="project-details__link">Github</a>
+                            <a href="https://frozen-river-07638.herokuapp.com/" target="_blank" class="project-details__link">Demo</a>
+                        </div> -->
+                    </section>
+                </article>
+            </section>
+            <section class="contact-section">
+                <h1 id="Contact" class="contact-section__title">Contact</h1>
+                <div class="contact-section__elements">
+                    <a href="https://github.com/MrtnOj" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/in/martin-ojasalu" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                </div>
+                <form
+                    action="https://formspree.io/f/mleoaayq"
+                    method="POST"
+                    class="email-form"
+                    >
+                    <label>
+                        Your email
+                        <input type="text" name="_replyto">
+                    </label>
+                    <label>
+                        Message
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button class="submit-email-button" type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <h1 class="footer-text">&copy; Martin Ojasalu 2021</h1>
+            <p class="footer-text">ojasalum@gmail.com</p>
+        </footer>
+        <div class="backdrop"></div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

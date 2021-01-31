@@ -5,18 +5,18 @@ const backdrop = document.querySelector('.backdrop');
 
 // Function to open/close mobile sidebar and display backdrop
 
-const burgerOrBackdropClicked = event => {
-   if (mobileNavBar.style.display === 'none') {
-      mobileNavBar.style.display = 'block';
-      backdrop.style.display = 'block'
-   } else {
-      mobileNavBar.style.display = 'none';
-      backdrop.style.display = 'none'
-   }
+const burgerClicked = event => {
+   mobileNavBar.style.display = 'block';
+   backdrop.style.display = 'block'
 }
 
-hamburger.addEventListener('click', burgerOrBackdropClicked);
-backdrop.addEventListener('click', burgerOrBackdropClicked);
+const backDropClicked = event => {
+   mobileNavBar.style.display = 'none';
+   backdrop.style.display = 'none';
+}
+
+hamburger.addEventListener('click', burgerClicked);
+backdrop.addEventListener('click', backDropClicked);
 
 
 // Listening on click events on menu items to close the mobile sidebar menu

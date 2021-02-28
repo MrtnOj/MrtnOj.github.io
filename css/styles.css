@@ -161,6 +161,7 @@ body {
 
 .header__link:hover{
     transform: translateY(0);
+    color: #FFF7EB;
 }
 
 /* Portfolio section starting here */
@@ -238,7 +239,7 @@ body {
     border-radius: 0 0 1rem 1rem;
     background-color: white;
     transform: translateY(-800px);
-    transition: opacity 500ms ease-out, transform 300ms ease-out;
+    transition: opacity 500ms 200ms ease-out, transform 300ms 200ms ease-out;
     z-index: 2;
 }
 
@@ -273,28 +274,6 @@ body {
     border-radius: 0.2rem;
 }
 
-/* .project-details__links {
-    position: absolute;
-    left: 50%;
-    bottom: 75px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-}
-
-.project-details__link {
-    text-decoration: none;
-    margin: 0 30px;
-    padding: 0.5rem 1rem;
-    border: 2px solid black;
-    border-radius: 20%/50%;
-}
-
-.project-details__link:hover {
-    background-color: #F1896A;
-    color:white
-} */
-
 .project-card__footer {
     position: absolute;
     bottom: 0px;
@@ -322,7 +301,7 @@ body {
 }
 
 .contact-section {
-    height: 850px;
+    height: 900px;
     background-color:  black;
     padding: 0 100px 50px 100px;
     display: flex;
@@ -356,6 +335,8 @@ body {
 
 .contact-section__elements a:hover{
     transform: translateY(0);
+    color: white;
+    opacity: 0.95;
 }
 
 .email-form {
@@ -384,6 +365,7 @@ body {
 
 .email-form input, textarea {
     margin: 10px 0;
+    border-radius: 4px;
     font-size: 1rem;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -391,11 +373,19 @@ body {
 }
 
 .submit-email-button {
-    height: 30px;
-    width: 100%;
-    font-size: 1.3rem;
-    margin: 3px;
-    background-color: #FFF7EB;
+    height: 45px;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 20px;
+    padding: 5px;
+    background-color: #F1896A;
+    color: white;
+}
+
+.submit-email-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .footer {
@@ -423,7 +413,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    opacity: 25%;
+    opacity: 30%;
     z-index: 101;
     display: none;
 }

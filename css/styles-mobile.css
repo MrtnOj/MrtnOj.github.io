@@ -33,7 +33,7 @@
     }
 
     .header__text {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .header__links {
@@ -97,7 +97,7 @@
     /* Contact section starting here */
 
     .contact-section {
-        height: 700px;
+        height: 750px;
     }
 
     .contact-section__title {
